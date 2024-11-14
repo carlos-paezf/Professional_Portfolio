@@ -14,7 +14,7 @@ export const App = () => {
         <div>
             <p>{ t( 'user-info.name' ) }</p>
 
-            <button onClick={ () => i18n.changeLanguage( 'en' ) }>English</button>
+            <button onClick={ () => handleChangeLanguage( 'en' ) }>English</button>
             <button onClick={ () => handleChangeLanguage( 'es' ) }>Español</button>
         </div>
     );
