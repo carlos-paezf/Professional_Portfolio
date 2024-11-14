@@ -1,6 +1,7 @@
 import './App.css';
 
 import { useTranslation } from "react-i18next";
+import { ThemeToggle } from './app/components/theme-toggle';
 
 
 export const App = () => {
@@ -12,6 +13,7 @@ export const App = () => {
 
     return (
         <div>
+            <ThemeToggle />
             <p>{ t( 'user-info.name' ) }</p>
 
             <button onClick={ () => handleChangeLanguage( 'en' ) }>English</button>
