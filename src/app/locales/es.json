@@ -1,0 +1,29 @@
+{
+    "user-info": {
+        "name": "Carlos David Páez Ferreira",
+        "email": "",
+        "phone": "",
+        "linked-in": "https://www.linkedin.com/in/carlos-david-paez-ferreira/",
+        "github": "https://www.github.com/carlos-paezf/"
+    },
+    "about-me": {
+        "title": "Acerca de",
+        "description": ""
+    },
+    "resume": {
+        "title": "Biografía",
+        "description": ""
+    },
+    "portfolio": {
+        "title": "Portafolio de proyectos",
+        "description": ""
+    },
+    "blog": {
+        "title": "Blog",
+        "description": ""
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": ""
+    }
+}
