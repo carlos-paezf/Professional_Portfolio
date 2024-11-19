@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import { useTranslation } from "react-i18next";
 import { ThemeToggle } from './app/components/theme-toggle';
