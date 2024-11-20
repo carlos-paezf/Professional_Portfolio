@@ -1,20 +1,28 @@
 /* Light Theme Colors */
 $light-theme: (
-    primary-color: #3498db,
-    secondary-color: #2ecc71,
-    text-color: #333333,
-    secondary-text-color: #333333,
-    background-color: #f5f5f5
+    primary-color: #F59115,
+    secondary-color: #FFC107,
+    background-color: #FFFFFF,
+    surface-color: #F8F9FA,
+    text-primary-color: #212529,
+    secondary-text-color: #495057,
+    border-color: #E9ECEF,
+    hover-color: #FFAA42,
+    active-color: #D87D0D,
 );
 
 
 /* Dark Theme Colors */
 $dark-theme: (
-    primary-color: #ab8a53,
-    secondary-color: #1e1e1e,
-    text-color: #f5f5f5,
-    secondary-text-color: #a8a8a8,
-    background-color: #111111
+    primary-color: #F59115,
+    secondary-color: #FFC107,
+    background-color: #121212,
+    surface-color: #1E1E1E,
+    text-primary-color: #E9ECEF,
+    secondary-text-color: #ADB5BD,
+    border-color: #495057,
+    hover-color: #FFAA42,
+    active-color: #D87D0D,
 );
 
 

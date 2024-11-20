@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 import { ThemeToggle } from './app/components/theme-toggle';
 import { usePrefersColorScheme } from './app/hooks/use-prefers-color-scheme';
 
-import './App.scss';
-
 
 export const App = () => {
     const { t, i18n } = useTranslation();
