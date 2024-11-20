@@ -1,1 +1,1 @@
-export type { IThemeContext } from './theme-context-interface';
+export type { IThemeContextProps, ThemeType } from './theme-context-interface';

@@ -2,11 +2,14 @@ import { useTheme } from "../hooks/use-theme";
 
 
 export const ThemeToggle = () => {
-    const { darkMode, toggleTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
 
     return (
-        <button onClick={ toggleTheme }>
-            { darkMode ? 'Modo Claro' : 'Modo oscuro' }
-        </button>
+        <div>
+            <p>Tema actual: { theme }</p>
+            <button onClick={ () => setTheme( 'light' ) }>Modo Claro</button>
+            <button onClick={ () => setTheme( 'dark' ) }>Modo Oscuro</button>
+            <button onClick={ () => setTheme( 'system' ) }>Automático</button>
+        </div>
     );
 };

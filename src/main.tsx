@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import './app/helpers/i18n.ts';
-import './index.scss';
+import './assets/styles/main.scss';
 
 import { App } from './App.tsx';
 import { ThemeProvider } from './app/context/theme-context.tsx';
