@@ -25,5 +25,11 @@
     "contact": {
         "title": "Contact",
         "description": ""
+    },
+    "theme": {
+        "description": "Actual Theme",
+        "dark": "Dark Mode",
+        "light": "Light Mode",
+        "system": "Automatic Mode"
     }
 }
