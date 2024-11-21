@@ -38,7 +38,7 @@ export const ThemeToggle = () => {
                 <ToggleButton value="dark" aria-label="dark">
                     <BedtimeIcon className="toggle-button" />
                 </ToggleButton>
-                <ToggleButton value="system" aria-label="automatic">
+                <ToggleButton value="system" aria-label="system">
                     <SettingsSuggestIcon className="toggle-button" />
                 </ToggleButton>
             </ToggleButtonGroup>
