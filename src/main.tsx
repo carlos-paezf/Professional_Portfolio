@@ -5,7 +5,7 @@ import './app/helpers/i18n.ts';
 import './assets/styles/main.scss';
 
 import { App } from './App.tsx';
-import { ThemeProvider } from './app/context/theme-context.tsx';
+import { ThemeProvider } from './app/context';
 
 
 createRoot( document.getElementById( 'root' )! ).render(
