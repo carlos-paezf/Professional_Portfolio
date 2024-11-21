@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -26,6 +28,11 @@ button {
     background-color: var(--background-color) !important;
 }
 
+
+.MuiToggleButton-root {
+    height: 48px !important;
+    font-size: $font-size-base !important;
+}
 
 .Mui-selected {
     background-color: var(--surface-color) !important;

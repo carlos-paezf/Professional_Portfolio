@@ -2,6 +2,7 @@
 @use './mixins' as *;
 @use './variables' as *;
 @use './components/button' as *;
+@use './components/sidenav' as *;
 
 
 :root {
@@ -18,8 +19,18 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+
+    margin: 0;
+    min-width: 320px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-primary-color);
+    place-self: center;
+
+    transition: background-color .3s, color .3s;
 }
+
 
 :root[data-theme='light'] {
     @include theme-variables($light-theme);
@@ -29,19 +40,6 @@
     @include theme-variables($dark-theme);
 }
 
-
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--background-color);
-    color: var(--text-primary-color);
-    transition: background-color .3s, color .3s;
-    justify-content: center;
-}
 
 a {
     font-weight: 500;

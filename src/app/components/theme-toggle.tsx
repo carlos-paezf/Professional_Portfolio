@@ -1,5 +1,4 @@
 import { MouseEvent } from "react";
-import { useTranslation } from "react-i18next";
 
 import { useTheme } from "../hooks";
 import { ThemeType } from "../interfaces";
@@ -9,7 +8,6 @@ import { BedtimeIcon, Brightness7Icon, SettingsSuggestIcon, ToggleButton, Toggle
 
 export const ThemeToggle = () => {
     const { theme, setTheme } = useTheme();
-    const { t } = useTranslation();
 
     /**
      * The function `handleThemeSelection` sets a new theme if it is not null when triggered by a mouse
@@ -29,19 +27,16 @@ export const ThemeToggle = () => {
     };
 
     return (
-        <div>
-            <span>{ t( "theme.description" ) }:</span>
-            <ToggleButtonGroup value={ theme } exclusive onChange={ handleThemeSelection } aria-label="theme selection">
-                <ToggleButton value="light" aria-label="light">
-                    <Brightness7Icon className="toggle-button" />
-                </ToggleButton>
-                <ToggleButton value="dark" aria-label="dark">
-                    <BedtimeIcon className="toggle-button" />
-                </ToggleButton>
-                <ToggleButton value="system" aria-label="system">
-                    <SettingsSuggestIcon className="toggle-button" />
-                </ToggleButton>
-            </ToggleButtonGroup>
-        </div>
+        <ToggleButtonGroup value={ theme } exclusive onChange={ handleThemeSelection } aria-label="theme selection">
+            <ToggleButton value="light" aria-label="light">
+                <Brightness7Icon className="toggle-button" />
+            </ToggleButton>
+            <ToggleButton value="dark" aria-label="dark">
+                <BedtimeIcon className="toggle-button" />
+            </ToggleButton>
+            <ToggleButton value="system" aria-label="system">
+                <SettingsSuggestIcon className="toggle-button" />
+            </ToggleButton>
+        </ToggleButtonGroup>
     );
 };
