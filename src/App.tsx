@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 
-import { ThemeToggle } from './app/components/theme-toggle';
+import { ThemeToggle } from './app/components';
 import { usePrefersColorScheme } from './app/hooks/use-prefers-color-scheme';
 
 
