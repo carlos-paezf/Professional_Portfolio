@@ -1,9 +1,9 @@
 import { MouseEvent } from "react";
 
-import { useTheme } from "../hooks";
-import { ThemeType } from "../interfaces";
+import { useTheme } from "../../hooks/index.ts";
+import { ThemeType } from "../../interfaces/index.ts";
 
-import { BedtimeIcon, Brightness7Icon, SettingsSuggestIcon, ToggleButton, ToggleButtonGroup } from "../shared/material-ui.ts";
+import { BedtimeIcon, Brightness7Icon, SettingsSuggestIcon, ToggleButton, ToggleButtonGroup } from "../../shared/material-ui.ts";
 
 
 export const ThemeToggle = () => {

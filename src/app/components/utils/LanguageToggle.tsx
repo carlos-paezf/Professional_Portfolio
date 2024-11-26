@@ -1,8 +1,8 @@
 import { MouseEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { LanguageType } from '../interfaces';
-import { ToggleButton, ToggleButtonGroup } from "../shared/material-ui.ts";
+import { LanguageType } from '../../interfaces';
+import { ToggleButton, ToggleButtonGroup } from "../../shared/material-ui.ts";
 
 
 export const LanguageToggle = () => {
