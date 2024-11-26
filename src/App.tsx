@@ -1,22 +1,17 @@
-import { LanguageToggle, ThemeToggle } from './app/components';
+import { AppLayout, FloatingMenuLayout } from './app/layout';
 
 
+/**
+ * The `App` component renders the `AppLayout` and `FloatingMenuLayout` components in a React
+ * application.
+ * @returns The `App` component is being returned, which consists of the `AppLayout` component and the
+ * `FloatingMenuLayout` component wrapped in a fragment (`<>...</>`).
+ */
 export const App = () => {
     return (
         <>
-            <main>
-                <div className="column-1 sidenav">
-
-                </div>
-                <div className="column-2">
-                    <h1>App</h1>
-                </div>
-            </main>
-
-            <div className="floating-menu">
-                <ThemeToggle />
-                <LanguageToggle />
-            </div>
+            <AppLayout />
+            <FloatingMenuLayout />
         </>
     );
 };
