@@ -1,4 +1,4 @@
-import { MouseEvent } from "react";
+import { FC, MouseEvent } from "react";
 
 import { useTheme } from "../../hooks/index.ts";
 import { ThemeType } from "../../interfaces/index.ts";
@@ -6,7 +6,15 @@ import { ThemeType } from "../../interfaces/index.ts";
 import { BedtimeIcon, Brightness7Icon, SettingsSuggestIcon, ToggleButton, ToggleButtonGroup } from "../../shared/material-ui.ts";
 
 
-export const ThemeToggle = () => {
+/**
+ * The `ThemeToggle` component in TypeScript React allows users to toggle between light, dark, and
+ * system themes with corresponding icons.
+ * @returns The `ThemeToggle` component is being returned. It consists of a `ToggleButtonGroup`
+ * component with three `ToggleButton` components inside. Each `ToggleButton` represents a different
+ * theme option - light, dark, and system. The `ToggleButtonGroup` component manages the selection of
+ * the theme and triggers the `handleThemeSelection` function when the theme is changed.
+ */
+export const ThemeToggle: FC = () => {
     const { theme, setTheme } = useTheme();
 
     /**

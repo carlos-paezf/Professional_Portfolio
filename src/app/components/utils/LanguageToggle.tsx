@@ -1,11 +1,19 @@
-import { MouseEvent, useState } from "react";
+import { FC, MouseEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { LanguageType } from '../../interfaces';
 import { ToggleButton, ToggleButtonGroup } from "../../shared/material-ui.ts";
 
 
-export const LanguageToggle = () => {
+/**
+ * The `LanguageToggle` component in TypeScript React allows users to toggle between English and
+ * Spanish languages with the help of i18n library integration.
+ * @returns The `LanguageToggle` component is being returned. It consists of a `ToggleButtonGroup`
+ * component with two `ToggleButton` components inside it, allowing users to toggle between English and
+ * Spanish languages. The component also includes a function `handleLanguageSelection` that updates the
+ * selected language and changes the language in the i18n library accordingly.
+ */
+export const LanguageToggle: FC = () => {
     const { i18n } = useTranslation();
     const [ language, setLanguage ] = useState<LanguageType>( 'es' );
 
