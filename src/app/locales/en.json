@@ -8,23 +8,23 @@
     },
     "about-me": {
         "title": "About me",
-        "description": ""
+        "content": ""
     },
     "resume": {
         "title": "Resume",
-        "description": ""
+        "content": ""
     },
     "portfolio": {
         "title": "Portfolio",
-        "description": ""
+        "content": ""
     },
     "blog": {
         "title": "Blog",
-        "description": ""
+        "content": ""
     },
     "contact": {
         "title": "Contact",
-        "description": ""
+        "content": ""
     },
     "theme": {
         "description": "Actual Theme",
