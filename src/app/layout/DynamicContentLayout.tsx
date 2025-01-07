@@ -14,7 +14,9 @@ export const DynamicContentLayout: FC = () => {
     return (
         <div className="dynamic-content">
             <NavigationTabComponent />
-            <Outlet />
+            <div className="content">
+                <Outlet />
+            </div>
         </div>
     );
 };
