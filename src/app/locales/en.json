@@ -7,23 +7,28 @@
         "github": "https://www.github.com/carlos-paezf/"
     },
     "about-me": {
-        "title": "About me",
+        "title": "About",
+        "description": "About me",
         "content": ""
     },
     "resume": {
         "title": "Resume",
+        "description": "Resume",
         "content": ""
     },
     "portfolio": {
         "title": "Portfolio",
+        "description": "Professional Portfolio",
         "content": ""
     },
     "blog": {
         "title": "Blog",
+        "description": "Blog",
         "content": ""
     },
     "contact": {
         "title": "Contact",
+        "description": "Contact",
         "content": ""
     },
     "theme": {
