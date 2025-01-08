@@ -31,6 +31,11 @@
         "description": "Contact",
         "content": ""
     },
+    "not-found": {
+        "title": "Oops!",
+        "content": "We couldn't find the page you were looking for, but don't worry, you can return to the main page or explore our sections. 😊",
+        "help": "Here are some helpful links instead:"
+    },
     "theme": {
         "description": "Actual Theme",
         "dark": "Dark Mode",

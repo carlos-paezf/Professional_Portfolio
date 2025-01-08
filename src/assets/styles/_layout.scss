@@ -100,3 +100,73 @@ main {
     border-radius: 1rem;
     min-height: 100%;
 }
+
+
+.not-found {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    .not-found__content {
+        text-align: center;
+        display: block;
+
+        .not-found__title {
+            font-size: 5rem;
+            margin-bottom: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 3.5rem;
+            }
+        }
+
+        .not-found__message {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+
+        .not-found__help {
+            font-size: 1.15rem;
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+
+        .not-found__actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+
+            @media (max-width: 576px) {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    }
+
+    .not-found__animation {
+        min-width: 500px;
+        height: 500px;
+
+        @media (max-width: 768px) {
+            min-width: 300px;
+            height: 500px;
+        }
+    }
+}
