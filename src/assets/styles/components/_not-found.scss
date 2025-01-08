@@ -3,25 +3,25 @@
 
 
 .not-found {
-    @include responsive-grid(repeat(2, 1fr), $spacing-large, $spacing-medium);
-    padding: $spacing-medium;
+    padding: 16px;
     align-items: center;
     justify-content: center;
     min-height: 75vh;
     width: 100%;
+    @include responsive-grid(repeat(2, 1fr), $spacing-large, $spacing-medium);
 
     .not-found__content {
         text-align: center;
         display: block;
 
         .not-found__title {
-            @include responsive-font(5rem, 3.5rem);
             margin-bottom: $spacing-medium;
+            @include responsive-font(5rem, 3.5rem);
         }
 
         .not-found__message {
-            @include responsive-font(1.25rem, 1rem);
             margin-bottom: $spacing-small;
+            @include responsive-font(1.25rem, 1rem);
         }
 
         .not-found__help {
