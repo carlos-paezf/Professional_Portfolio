@@ -1,0 +1,13 @@
+.dynamic-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--surface-color);
+    border-radius: 1rem;
+    min-height: 100%;
+
+    .content {
+        padding: 0 32px;
+        margin-top: 0;
+    }
+}

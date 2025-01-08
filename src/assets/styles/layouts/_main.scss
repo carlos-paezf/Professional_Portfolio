@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: $spacing-medium;
+    padding: $spacing-medium;
+    min-width: 100%;
+    height: 100%;
+
+    @media (max-width: $breakpoint-desktop) {
+        grid-template-columns: 1fr;
+    }
+}

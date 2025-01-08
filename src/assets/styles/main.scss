@@ -1,7 +1,13 @@
-@use './layout' as *;
-@use './mixins' as *;
-@use './variables' as *;
+@use './base/mixins' as *;
+@use './base/typography' as *;
+@use './base/variables' as *;
 @use './components/button' as *;
+@use './components/floating-menu' as *;
+@use './components/navbar' as *;
+@use './components/not-found' as *;
+@use './layouts/dynamic-content' as *;
+@use './layouts/main' as *;
+@use './layouts/sidenav' as *;
 
 
 :root {
@@ -36,20 +42,4 @@
 
 :root[data-theme='dark'] {
     @include theme-variables($dark-theme);
-}
-
-
-a {
-    font-weight: 500;
-    text-decoration: inherit;
-    color: var(--primary-color);
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
 }

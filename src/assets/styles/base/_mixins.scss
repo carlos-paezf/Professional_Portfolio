@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+
+@mixin theme-variables($theme-map) {
+    @each $key, $value in $theme-map {
+        --#{$key}: #{$value};
+    }
+}
+
+
+@mixin box-shadow($color, $x: 0px, $y: 0px, $blur: 10px, $spread: -5px) {
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+}
+
+
+@mixin responsive-font($base-size, $sm-size, $breakpoint: $breakpoint-tablet) {
+    font-size: $base-size;
+
+    @media (max-width: $breakpoint) {
+        font-size: $sm-size;
+    }
+}
+
+
+@mixin responsive-grid($columns, $base-gap, $sm-gap, $breakpoint: $breakpoint-tablet) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $base-gap;
+
+    @media (max-width: $breakpoint) {
+        grid-template-columns: 1fr;
+        gap: $sm-gap;
+    }
+}
