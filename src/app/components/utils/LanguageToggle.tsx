@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 import { LanguageType } from '../../interfaces';
 import { ToggleButton, ToggleButtonGroup } from "../../shared/material-ui.ts";
 
+import unitedStatesFlag from "../../../assets/icons/estados-unidos.png";
+import colombiaFlag from "../../../assets/icons/colombia.png";
+
 
 /**
  * The `LanguageToggle` component in TypeScript React allows users to toggle between English and
@@ -38,10 +41,16 @@ export const LanguageToggle: FC = () => {
     return (
         <ToggleButtonGroup value={ language } exclusive onChange={ handleLanguageSelection }>
             <ToggleButton value='en' aria-label="en">
-                <span className="toggle-button">English</span>
+                <div className="language-button">
+                    <p className="toggle-button">EN</p>
+                    <img src={ unitedStatesFlag } alt="United States Flag" />
+                </div>
             </ToggleButton>
             <ToggleButton value='es' aria-label="es">
-                <span className="toggle-button">Español</span>
+                <div className="language-button">
+                    <p className="toggle-button">ES</p>
+                    <img src={ colombiaFlag } alt="Colombia Flag" />
+                </div>
             </ToggleButton>
         </ToggleButtonGroup>
     );
